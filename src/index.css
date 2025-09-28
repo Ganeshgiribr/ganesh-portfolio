@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientMove {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.animate-gradient {
+	background-size: 200% 200%;
+	animation: gradientMove 6s ease-in-out infinite;
+}
+
+@keyframes blob1 {
+	0%, 100% { transform: translateY(0) scale(1); }
+	50% { transform: translateY(-30px) scale(1.08); }
+}
+.animate-blob1 {
+	animation: blob1 7s ease-in-out infinite;
+}
+
+@keyframes blob2 {
+	0%, 100% { transform: translateY(0) scale(1); }
+	50% { transform: translateY(20px) scale(0.95); }
+}
+.animate-blob2 {
+	animation: blob2 9s ease-in-out infinite;
+}
+
+@keyframes blob3 {
+	0%, 100% { transform: translateY(0) scale(1); }
+	50% { transform: translateY(-15px) scale(1.04); }
+}
+.animate-blob3 {
+	animation: blob3 11s ease-in-out infinite;
+}
