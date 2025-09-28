@@ -1,0 +1,2 @@
+- [x] Update Header.jsx: Change LinkedIn to full URL with params, change email to ganeshbr742002@gmail.com
+- [x] Update Contact.jsx: Change LinkedIn to full URL, GitHub to Ganeshgiribr, email to ganeshbr742002@gmail.com
