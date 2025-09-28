@@ -2,6 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    const subject = 'Contact from Portfolio';
+    const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+    const mailtoLink = `mailto:ganeshgiri1842@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <motion.section
       id="contact"
@@ -17,13 +29,10 @@ export default function Contact() {
         <p className="text-gray-400">Submit the form below to get in touch with me</p>
       </div>
       <motion.form
+        onSubmit={handleSubmit}
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        name="contact"
         className="max-w-lg mx-auto bg-gray-700 p-8 rounded-xl flex flex-col gap-6 border border-gray-600"
       >
         <input type="hidden" name="form-name" value="contact" />
@@ -61,21 +70,21 @@ export default function Contact() {
       </motion.form>
       <div className="flex justify-center gap-6 mt-8">
         <a
-          href="https://linkedin.com/in/ganeshgiri"
+          href="https://www.linkedin.com/in/ganesh-b-r-ganesh-b7321b244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
           target="_blank"
           className="text-2xl text-purple-400 hover:text-purple-300 transition"
         >
           LinkedIn
         </a>
         <a
-          href="https://github.com/ganeshgiri"
+          href="https://github.com/Ganeshgiribr"
           target="_blank"
           className="text-2xl text-purple-400 hover:text-purple-300 transition"
         >
           GitHub
         </a>
         <a
-          href="mailto:ganeshgiri@example.com"
+          href="mailto:ganeshbr742002@gmail.com"
           className="text-2xl text-purple-400 hover:text-purple-300 transition"
         >
           Email

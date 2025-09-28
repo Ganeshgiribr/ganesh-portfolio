@@ -14,8 +14,8 @@ export default function Header() {
       <p className="text-xl text-gray-300 mb-8">MCA Student | Aspiring Data Scientist / AI Engineer</p>
       <div className="flex justify-center gap-8">
         <a href="https://github.com/Ganeshgiribr" target="_blank" rel="noopener" className="hover:text-purple-400 font-medium transition-colors">GitHub</a>
-        <a href="https://www.linkedin.com/in/ganesh-b-r-ganesh-b7321b244" target="_blank" rel="noopener" className="hover:text-blue-400 font-medium transition-colors">LinkedIn</a>
-        <a href="mailto:ganeshgiribr@email.com" className="hover:text-pink-400 font-medium transition-colors">Email</a>
+        <a href="https://www.linkedin.com/in/ganesh-b-r-ganesh-b7321b244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener" className="hover:text-blue-400 font-medium transition-colors">LinkedIn</a>
+        <a href="mailto:ganeshbr742002@gmail.com" className="hover:text-pink-400 font-medium transition-colors">Email</a>
       </div>
     </motion.header>
   );
